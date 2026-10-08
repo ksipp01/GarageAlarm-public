@@ -1,5 +1,7 @@
 # GarageAlarm
 
+![Completed GarageAlarm](images/GarageAlarm.jpg)
+
 A battery-powered, Wi-Fi garage-door monitor built using the **Seeed Studio XIAO ESP32-C3**, PlatformIO, and Pushover.
 
 The device mounts directly to the garage door, requires no connection to the garage-door opener, and sends smartphone notifications when the door has been left open.
