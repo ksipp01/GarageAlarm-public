@@ -30,8 +30,7 @@ The device mounts directly to the garage door, requires no connection to the gar
 - Mechanical tilt switch
 - Momentary setup pushbutton
 - Two 220 kΩ resistors
-- One 0.1 µF capacitor
-- 3D-printed enclosure
+- Small enclosure (61 x 36 x 25mm)
 
 ## Wiring
 
@@ -40,7 +39,6 @@ The device mounts directly to the garage door, requires no connection to the gar
 | Tilt switch | D2 to GND |
 | Setup button | D1 to GND |
 | Battery voltage divider | BAT+ → 220 kΩ → A0 → 220 kΩ → GND |
-| Filter capacitor | 0.1 µF between A0 and GND |
 
 Both the tilt switch and setup button use the ESP32's internal pull-up resistors.
 
@@ -99,7 +97,7 @@ The webpage includes a **Sleep Now** control to return the device to deep sleep 
 
 Battery voltage is measured through a high-resistance divider connected to A0.
 
-Two 220 kΩ resistors minimize continuous current consumption. A 0.1 µF capacitor helps stabilize the ADC measurement.
+Two 220 kΩ resistors minimize continuous current consumption.
 
 The completed device measured approximately **64 µA during deep sleep**, including the voltage-divider current.
 
